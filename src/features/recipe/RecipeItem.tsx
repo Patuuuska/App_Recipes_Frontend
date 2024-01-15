@@ -1,4 +1,4 @@
-import {Card, Group, Image, Badge, Button, Text, Title} from "@mantine/core";
+import {Card, Group, Image, Button, Text, Title} from "@mantine/core";
 import React, {FC, memo} from "react";
 import {RecipeType} from "../../types/RecipeType";
 
@@ -18,18 +18,13 @@ export const RecipeItem: FC<RecipeItemProps> = memo(({item}) => {
                 />
             </Card.Section>
 
-            <Group justify="space-between" mt="md" mb="xs">
-                {/*<Text fw={500}>Norway Fjord Adventures</Text>*/}
-                <Title order={6}> {item.title} </Title>
+            <Group justify="space-between" mt="md" mb="xs" >
+                <Title order={6}>{item.title}</Title>
             </Group>
 
-            <Text size="sm" c="dimmed">
-                {item.content}
-            </Text>
-
-            <Button color="blue" fullWidth mt="md" radius="md">
-                <Text fw={500}> Gotuj </Text>
+            <Button color="dark" fullWidth mt="md" radius="md">
+                <Text fw={500}>Sprawdź przepis</Text>
             </Button>
         </Card>
-    )
-})
+    );
+});

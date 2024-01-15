@@ -18,22 +18,23 @@ export const RecipeForm = () => {
                     gap="sm"
                 >
                     <TextInput
-                        label="Input label"
-                        description="Input description"
-                        placeholder="Input placeholder"
+                        label="Nazwa przepisu"
+                        description="Dodaj nazwę przepisu, aby inni mogli go wyszukać"
+                        placeholder="Nazwa przepisu"
                     />
 
                     <Textarea
-                        label="Input label"
-                        description="Input description"
-                        placeholder="Input placeholder"
+                        label="Opis"
+                        description="Dodaj niezbędne informacje o składnikach i sposobie przygotowania"
+                        placeholder="Opis"
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button type="submit"> Submit </Button>
+                        <Button type="submit" color={"dark"}> Submit </Button>
                     </Group>
                 </Stack>
             </form>
         </Paper>
     )
 }
+
