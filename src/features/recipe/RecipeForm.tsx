@@ -21,16 +21,18 @@ export const RecipeForm = () => {
                         label="Nazwa przepisu"
                         description="Dodaj nazwę przepisu, aby inni mogli go wyszukać"
                         placeholder="Nazwa przepisu"
+                        {...form.getInputProps('title')}
                     />
 
                     <Textarea
                         label="Opis"
                         description="Dodaj niezbędne informacje o składnikach i sposobie przygotowania"
                         placeholder="Opis"
+                        {...form.getInputProps('content')}
                     />
 
                     <Group justify="flex-end" mt="md">
-                        <Button type="submit" color={"dark"}> Submit </Button>
+                        <Button type="submit" color={"dark"}> Dodaj przepis </Button>
                     </Group>
                 </Stack>
             </form>

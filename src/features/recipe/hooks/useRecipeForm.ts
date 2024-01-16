@@ -17,7 +17,7 @@ export const useRecipeForm = () => {
 
             content: (value) => {
                 if (value.length < 10) {
-                    return "Content must be a least 3 characters long";
+                    return "Content must be a least 10 characters long";
                 }
             }
         },

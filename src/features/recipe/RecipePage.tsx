@@ -202,8 +202,6 @@ const data: RecipeType[] = [
     `,
     },
 ]
-
-
 export const RecipePage = () => {
     return (
         <div style={{width: '100%'}}>

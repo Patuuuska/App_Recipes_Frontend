@@ -1,6 +1,7 @@
 import {Card, Group, Image, Button, Text, Title} from "@mantine/core";
 import React, {FC, memo} from "react";
 import {RecipeType} from "../../types/RecipeType";
+import {Link} from "react-router-dom";
 
 interface RecipeItemProps {
     item: RecipeType;
@@ -22,7 +23,7 @@ export const RecipeItem: FC<RecipeItemProps> = memo(({item}) => {
                 <Title order={6}>{item.title}</Title>
             </Group>
 
-            <Button color="dark" fullWidth mt="md" radius="md">
+            <Button component={Link} to={`/recipe/${item.id}`} color="dark" fullWidth mt="md" radius="md">
                 <Text fw={500}>Sprawdź przepis</Text>
             </Button>
         </Card>

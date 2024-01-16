@@ -3,6 +3,10 @@ import {Layout} from "../components/Layout";
 import {RecipePage} from "./recipe/RecipePage";
 import {RecipeForm} from "./recipe/RecipeForm";
 import {ErrorPage} from "./error/ErrorPage";
+import {RecipeInformation} from "./recipe/RecipeInformation";
+import React from "react";
+
+
 
 const routes: RouteObject[] = [
     {
@@ -19,7 +23,7 @@ const routes: RouteObject[] = [
             },
             {
                 path: '/recipe/:id',
-                element: <RecipeForm/>
+                element: <RecipeInformation/>
             },
             {
                 path: '*',
